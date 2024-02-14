@@ -19,7 +19,7 @@ function jugarCachipun() {
       } else if (
         (jugadaUsuario === "PIEDRA" && jugadaMaquina === "TIJERA") ||
         (jugadaUsuario === "PAPEL" && jugadaMaquina === "PIEDRA") ||
-        (jugadaUsuario === "TIJERA" && jugadaMaquina === PAPEL")
+        (jugadaUsuario === "TIJERA" && jugadaMaquina === "PAPEL")
       ) {
         resultado = "¡Felicidades! Ganaste contra la máquina.";
       } else {
