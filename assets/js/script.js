@@ -1,12 +1,12 @@
 function jugarCachipun() {
-    const opciones = ["piedra", "papel", "tijera"];
+    const opciones = ["PIEDRA", "PAPEL", "TIJERA"];
     
     // Solicitar al usuario las veces que desea jugar
     const vecesAJugar = parseInt(prompt("¿Cuántas veces deseas jugar contra la computadora?"));
     
     for (let i = 0; i < vecesAJugar; i++) {
       // Solicitar al usuario su jugada
-      const jugadaUsuario = prompt("Elige tu jugada (piedra, papel o tijera):").toLowerCase();
+      const jugadaUsuario = prompt("Elige tu jugada (PIEDRA, PAPEL o TIJERA):").toLowerCase();
       
       // Generar jugada automática para la máquina
       const jugadaMaquina = opciones[Math.floor(Math.random() * 3)];
@@ -17,9 +17,9 @@ function jugarCachipun() {
       if (jugadaUsuario === jugadaMaquina) {
         resultado = "¡Es un empate!";
       } else if (
-        (jugadaUsuario === "piedra" && jugadaMaquina === "tijera") ||
-        (jugadaUsuario === "papel" && jugadaMaquina === "piedra") ||
-        (jugadaUsuario === "tijera" && jugadaMaquina === "papel")
+        (jugadaUsuario === "PIEDRA" && jugadaMaquina === "TIJERA") ||
+        (jugadaUsuario === "PAPEL" && jugadaMaquina === "PIEDRA") ||
+        (jugadaUsuario === "TIJERA" && jugadaMaquina === PAPEL")
       ) {
         resultado = "¡Felicidades! Ganaste contra la máquina.";
       } else {
